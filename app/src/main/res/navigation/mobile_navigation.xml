@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/inicio3">
+
+    <fragment
+        android:id="@+id/nav_libreria"
+        android:name="com.hola.liby03.ListaLibro"
+        android:label="fragment_lista_libro"
+        tools:layout="@layout/fragment_lista_libro" />
+    <fragment
+        android:id="@+id/libros_fragmento"
+        android:name="com.hola.liby03.libros_fragmento"
+        android:label="fragment_libros_fragmento"
+        tools:layout="@layout/fragment_libros_fragmento" />
+    <fragment
+        android:id="@+id/perfil"
+        android:name="com.hola.liby03.perfil"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_perfil_to_editarPerfil"
+            app:destination="@id/editarPerfil" />
+    </fragment>
+    <fragment
+        android:id="@+id/editarPerfil"
+        android:name="com.hola.liby03.EditarPerfil"
+        android:label="fragment_editar_perfil"
+        tools:layout="@layout/fragment_editar_perfil" />
+    <fragment
+        android:id="@+id/googleMaps"
+        android:name="com.hola.liby03.GoogleMaps"
+        android:label="fragment_google_maps"
+        tools:layout="@layout/fragment_google_maps" />
+    <fragment
+        android:id="@+id/inicio3"
+        android:name="com.hola.liby03.Inicio"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" />
+
+</navigation>
